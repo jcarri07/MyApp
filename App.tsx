@@ -85,6 +85,9 @@ export default function App() {
           <TouchableOpacity style={styles.contentAncle}>
             <Text style={styles.textAncle}>Olvidaste tu contraseña?</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.primaryButton}>
+            <Text style={styles.textButton}>Ingresar</Text>
+          </TouchableOpacity>
           <View style={styles.footer}>
             <Text style={{color: '#fff'}}>No tienes cuenta? </Text>
             <TouchableOpacity>
@@ -142,7 +145,7 @@ const styles = StyleSheet.create({
   },
 
   containerInputs: {
-    top: '55%',
+    top: '50%',
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -184,6 +187,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
+  },
+
+  primaryButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
+    top: '10%',
+    height: '25%',
+    width: '50%',
+    borderRadius: 15,
+    backgroundColor: '#393838',
+  },
+
+  textButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontFamily: 'Roboto-Black',
+    fontSize: 18,
   },
 
   icon: {
